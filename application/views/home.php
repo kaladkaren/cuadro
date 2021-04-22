@@ -8,5 +8,5 @@
 </body>
 
 <input type="filepicker" data-fp-apikey="AfLddltxlRFyI7PzHfgR4z" />
-<script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
+<script type="text/javascript" src="https://api.filestackapi.com/filestack.js"></script>
 </html>
