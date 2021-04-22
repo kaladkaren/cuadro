@@ -20,6 +20,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		redirect('cms/dashboard');
+		// redirect('cms/dashboard');
+		$this->load->view('home');
 	}
 }
