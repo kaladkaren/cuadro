@@ -7,7 +7,7 @@
 
 <!-- <input type="filepicker" data-fp-apikey="AfLddltxlRFyI7PzHfgR4z" /> -->
 
-<button id="facebookUpload">Upload your Photos for Facebook</button>
+<button class="facebookUpload">Upload your Photos for Facebook</button>
 <script type="text/javascript" src="https://api.filestackapi.com/filestack.js"></script>
 
 <script>
