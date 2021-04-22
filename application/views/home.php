@@ -2,12 +2,56 @@
 <html>
 <head>
 	<title>Cuadro</title>
+	<!-- This script tag includes the Filestack API into your HTML file -->
+    <script type="text/javascript" src="https://static.filestackapi.com/v3/filestack.js"></script>
 </head>
 <body>
 
-<!-- <input type="filepicker" data-fp-apikey="AfLddltxlRFyI7PzHfgR4z" /> -->
+	<!-- Button calls function 'pickMark()' onclick now -->
+    <input type="BUTTON" value="Pick Watermark" id="pickWatermark" onclick="pickMark()">
 
-<button id="facebookUpload">Upload your Photos for Facebook</button>
+    <script>
+	    var client = filestack.init("AfLddltxlRFyI7PzHfgR4z")
+	   //variable to hold the watermark handle 
+	   var watermarkHandle = '';
+
+	   //Function pickMark() will not receive the result object back 
+	   function pickMark() {
+	      console.log("Picking Watermark");
+	      client.pick({
+	         accept:'image/*',
+	         maxFiles: 1,
+	      }).then(function(result) {//Taking the results object in as 'result'
+	         //Putting the result in a string, and printing it to the console
+	         console.log(JSON.stringify(result));
+	         //Sets the watermark handle to the handle of the first file in the result
+	         watermarkHandle = result.filesUploaded[0].handle;
+	         //Logs the new watermark handle in the console
+	         console.log(watermarkHandle);
+	      });
+	    }
+
+	    function storeWaterMarkedPhoto() {
+		 client.storeURL(transformURL).then(function(result) {});
+		}
+	</script>
+
+    <!-- <script>
+        var client = filestack.init("AfLddltxlRFyI7PzHfgR4z");
+        //The function pickMark()
+        //Function pickMark() will receive the result object back 
+		function pickMark() {
+		 console.log("Picking Watermark");
+		 client.pick({
+		 accept:'image/*',
+		 maxFiles: 1,
+		 }).then(function(result) {
+		 console.log(JSON.stringify(result));
+		 });
+		}
+    </script> -->
+
+<!-- <button id="facebookUpload">Upload your Photos for Facebook</button>
 <script type="text/javascript" src="https://api.filestackapi.com/filestack.js"></script>
 
 <script>
@@ -24,31 +68,8 @@
 			console.log(JSON.stringify(Blob));
 		}
 		);
-	};
-	
-	// $('#facebookUpload').on('click', function() {
-	// 	  var _this = $(this); 
-	// 	  filepicker.pick(
-	// 	    {
-	// 	      mimetype: 'image/*',
-	// 	      hide: true,
-	// 	      maxSize: 2*1024*1024,
-	// 	      imageQuality: 90,
-	// 	      imageDim: [800, null],
-	// 	      services: ['COMPUTER', 'FACEBOOK', 'INSTAGRAM'],
-	// 	      openTo: 'COMPUTER'
-	// 	    },
-	// 	    function(Blob) {
-	// 	      setTimeout(previewImage(Blob.url), 2000);
-	// 	      console.log(JSON.stringify(Blob));
-	// 	      _this.data("doc-url", Blob.url);
-	// 	    }
-	// 	  );
-	// 	});
-	
-
-	
-</script>
+	};	
+</script> -->
 
 </body>
 </html>
