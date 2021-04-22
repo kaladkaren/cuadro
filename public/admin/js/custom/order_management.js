@@ -1,5 +1,8 @@
 $(document).ready(function() {
  //Updating
+  
+  
+  client.picker().open();
  $('.edit-row').on('click', function(){
   $('.modal').modal()
    $('#main-form')[0].reset() // reset the form
