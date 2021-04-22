@@ -44,7 +44,7 @@
                         <td><?php echo $value->delivery_status ?></td>
                         <td>
                           <button type="button"
-                          data-payload='<?php echo json_encode(['order_id' => $value->order_id, 'order_type' => $value->order_type, 'order_cost' => $value->order_cost, 'status' => $value->status, 'order_date' => $value->order_date])?>'
+                          data-payload='<?php echo json_encode(['order_id' => $value->order_id, 'order_type' => $value->order_type, 'order_cost' => $value->order_cost, 'status' => $value->status, 'order_date' => $value->order_date, 'delivery_date' => $value->delivery_date, 'delivery_status' => $value->delivery_status])?>'
                           class="edit-row btn btn-info btn-xs">Edit</button>
                           <button type="button" data-id='<?php echo $value->order_id; ?>'
                             class="btn btn-delete btn-danger btn-xs">Delete</button>

@@ -9,7 +9,7 @@ $(document).ready(function() {
    $('input[name=order_type]').removeAttr('required')
    $('input[name=order_images]').removeAttr('required')
    $('input[name=order_cost]').removeAttr('required')
-   $('input[name=order_status]').removeAttr('required')
+   $('input[name=status]').removeAttr('required')
    $('input[name=order_date]').removeAttr('required')
    $('input[name=delivery_date]').removeAttr('required')
    $('input[name=delivery_status]').removeAttr('required')
@@ -35,13 +35,8 @@ $(document).ready(function() {
   $('.modal').modal()
    $('#main-form')[0].reset() // reset the form
 
-   $('input[name=order_type]').Attr('required')
-   $('input[name=order_images]').Attr('required')
-   $('input[name=order_cost]').Attr('required')
-   $('input[name=status]').Attr('required')
-   $('input[name=delivery_status]').Attr('required')
 
-   $('#main-form').attr('action', base_url + 'cms/orders/add/')
+   $('#main-form').attr('action', base_url + 'cms/orders/add')
    
  })
 
