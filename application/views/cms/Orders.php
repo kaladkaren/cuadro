@@ -36,7 +36,7 @@
                       <tr>
                         <th scope="row"><?php echo $i++ ?></th>
                         <td><?php echo $value->order_type ?></td>
-                        <td><?php echo $value->order_images ?></td>
+                        <td><img src="<?php echo $value->order_images_f ?>" style="height: 100px; width: 100px;"></td>
                         <td><?php echo $value->order_cost ?></td>
                         <td><?php echo $value->status ?></td>
                         <td><?php echo $value->order_date ?></td>
