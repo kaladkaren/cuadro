@@ -17,7 +17,7 @@ $(document).ready(function() {
    $('input[name=order_type]').val(payload.order_type)
    $('input[name=order_images]').val(payload.order_images)
    $('input[name=order_cost]').val(payload.order_cost)
-   $('input[name=order_status]').val(payload.order_status)
+   $('input[name=status]').val(payload.status)
    $('input[name=order_date]').val(payload.order_date)
    $('input[name=delivery_date]').val(payload.delivery_date)
    $('input[name=delivery_status]').val(payload.delivery_status)
@@ -26,7 +26,7 @@ $(document).ready(function() {
    // });
    // $('select[name=user_type] option').filter(function () { return $(this).html() == payload.user_type; }).attr('selected', 'selected')
 
-   $('#main-form').attr('action', base_url + 'cms/orders/update' + payload.order_id)
+   $('#main-form').attr('action', base_url + 'cms/orders/update/' + payload.order_id)
    $('.modal').modal()
  })
 
@@ -38,10 +38,10 @@ $(document).ready(function() {
    $('input[name=order_type]').Attr('required')
    $('input[name=order_images]').Attr('required')
    $('input[name=order_cost]').Attr('required')
-   $('input[name=order_status]').Attr('required')
+   $('input[name=status]').Attr('required')
    $('input[name=delivery_status]').Attr('required')
 
-   $('#main-form').attr('action', base_url + 'cms/orders/add')
+   $('#main-form').attr('action', base_url + 'cms/orders/add/')
    
  })
 
@@ -53,7 +53,7 @@ $(document).ready(function() {
      const id = $(this).data('id')
      console.log(id);
 
-     invokeForm(base_url + 'cms/orders/delete', {id: id});
+     invokeForm(base_url + 'cms/orders/delete/', {id: id});
    }
 
  })
