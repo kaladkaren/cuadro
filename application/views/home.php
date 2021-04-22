@@ -7,10 +7,6 @@
 
 </body>
 
-
-<script type="text/javascript">
-	const client = filestack.init(AfLddltxlRFyI7PzHfgR4z);
-	client.picker().open();
-</script>
+<input type="filepicker" data-fp-apikey="AfLddltxlRFyI7PzHfgR4z">
 <script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
 </html>
