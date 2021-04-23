@@ -7,8 +7,8 @@ class Home_model extends Admin_core_model
   {
     parent::__construct();
 
-    $this->table = 'orderimages'; # Replace these properties on children
-    $this->upload_dir = 'uploads/orders/'; # Replace these properties on children
+    $this->table = 'orderimages'; 
+    $this->upload_dir = 'uploads/orders/';
     $this->per_page = 15;
   }
 
@@ -20,21 +20,17 @@ class Home_model extends Admin_core_model
   public function batch_upload($files = [])
   {
 
-    if($files == [] || $files == null ) return []; # Immediately returns an empty array if a parameter is not provided or key is not existing with the help of @ operator. Example @$_FILES['nonexistent_key']
+    if($files == [] || $files == null ) return [];
+    $k = key($files);
 
-    # Defaults
-    $k = key($files); # Gets the `key` of the uplaoded thing on your form
+    $uploaded_files = [];
+    $upload_path = 'uploads/' . $this->upload_dir;
 
-    $uploaded_files = []; # Initialize empty return array
-    $upload_path = 'uploads/' . $this->upload_dir; # Your upload path starting from the `root folder`. NOTE: Change this as needed
+    $config['upload_path'] = $upload_path;
+    $config['allowed_types'] = 'gif|jpg|jpeg|png';
 
-    # Configs
-    $config['upload_path'] = $upload_path; # Set upload path
-    $config['allowed_types'] = 'gif|jpg|jpeg|png'; # NOTE: Change this as needed
-
-    # Folder creation
     if (!is_dir($upload_path) && !mkdir($upload_path, DEFAULT_FOLDER_PERMISSIONS, true)){
-      mkdir($upload_path, DEFAULT_FOLDER_PERMISSIONS, true); # You can set DEFAULT_FOLDER_PERMISSIONS constant in application/config/constants.php
+      mkdir($upload_path, DEFAULT_FOLDER_PERMISSIONS, true);
     }
 
     foreach ($files['name'] as $key => $image) {
@@ -44,8 +40,8 @@ class Home_model extends Admin_core_model
       $_FILES[$k]['error'] = $files['error'][$key];
       $_FILES[$k]['size'] = $files['size'][$key];
 
-      $filename = time() . "_" . $files['name'][$key]; # Renames the filename into timestamp_filename
-      $images[] = $uploaded_files[$k][] = $filename; # Appends all filenames to our return array with the key
+      $filename = time() . "_" . $files['name'][$key];
+      $images[] = $uploaded_files[$k][] = $filename;
 
       $config['file_name'] = $filename;
       $this->upload->initialize($config);
@@ -55,21 +51,5 @@ class Home_model extends Admin_core_model
 
     return $uploaded_files;
   }
-
-  //  public function all()
-  // {
-  //   $res = $this->db->get($this->table)->result();
-  //   return $this->formatResImage($res);
-  // }
-
-  // public function formatResImage($res)
-  // {
-  //   $data = [];
-  //   foreach ($res as $key => $value){
-  //     $value->order_images_f = base_url($this->upload_dir) . $value->order_images;
-  //     $data[] = $value;
-  //   }
-  //   return $data;
-  // }
 
 }
