@@ -42,7 +42,7 @@
                         <td><?php echo $value->delivery_status ?></td>
                         <td>
                           <button type="button"
-                          data-payload='<?php echo json_encode(['order_id' => $value->order_id, 'order_type' => $value->order_type, 'order_cost' => $value->order_cost, 'customer_name' => $value->customer_name, 'customer_email' => $value->customer_email, 'customer_address' => $value->customer_address, 'status' => $value->status, 'order_date' => $value->order_date, 'delivery_date' => $value->delivery_date, 'delivery_status' => $value->delivery_status])?>'
+                          data-payload='<?php echo json_encode(['order_id' => $value->order_id, 'order_type' => $value->order_type, 'order_cost' => $value->order_cost, 'customer_name' => $value->customer_name, 'customer_email' => $value->customer_email, 'customer_address' => $value->customer_address, 'customer_number' => $value->customer_number, 'status' => $value->status, 'order_date' => $value->order_date, 'delivery_date' => $value->delivery_date, 'delivery_status' => $value->delivery_status])?>'
                           class="edit-row btn btn-info btn-xs">Edit</button>
                           <button type="button" data-id='<?php echo $value->order_id; ?>'
                             class="btn btn-delete btn-danger btn-xs">Delete</button>
@@ -95,8 +95,12 @@
               <input type="text" class="form-control" name="customer_email" placeholder="customer Email">
             </div>
             <div class="form-group">
-              <label >Customer Email</label>
+              <label >Customer Address</label>
               <textarea class="form-control" name="customer_address" placeholder="customer Address"></textarea>
+            </div>
+            <div class="form-group">
+              <label >Customer Contact Number</label>
+              <input type="text" class="form-control" name="customer_number" placeholder="customer Number">
             </div>
             <div class="form-group">
               <label >Status</label>
