@@ -5,11 +5,14 @@
     <!-- <script type="text/javascript" src="https://static.filestackapi.com/v3/filestack.js"></script> -->
 </head>
 <body>
-
+<form role="form" method="post" action="addOrder" id="order-details" enctype="multipart/form-data">
 <input type="text" name="customer_name" placeholder="Enter your Name"><br>
 <input type="email" name="customer_email" placeholder="Enter mailing address"><br>
 <input type="text" name="customer_contactnum" placeholder="Enter Contact Number"><br>
 <textarea name="customer_address" placeholder="Address"></textarea><br>
+<input type="file" name="order_images"><br>
+
+</form>
 
 
 
