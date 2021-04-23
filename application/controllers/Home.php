@@ -24,7 +24,7 @@ class Home extends Admin_core_controller {
     if($this->Order_model->add(array_merge($this->input->post(null, true),$this->Home_model->upload('order_images')))){
       $this->session->set_flashdata('flash_msg', ['message' => 'New Order added successfully', 'color' => 'green']);
     } else {
-      $this->session->set_flashdata('flash_msg', ['message' => 'Error Saving Frame', 'color' => 'red']);
+      $this->session->set_flashdata('flash_msg', ['message' => 'Error Placing Order', 'color' => 'red']);
     }
       $this->admin_redirect('');
   }

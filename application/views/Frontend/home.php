@@ -7,7 +7,7 @@
 <body>
 <form role="form" method="post" action="add" id="order-details" enctype="multipart/form-data">
 <input type="text" name="customer_name" placeholder="Enter your Name"><br>
-<input type="email" name="customer_email" placeholder="Enter mailing address"><br>
+<input type="email" name="customer_email" placeholder="Enter Mailing Address"><br>
 <input type="text" name="customer_number" placeholder="Enter Contact Number"><br>
 <select name="order_type">
 
@@ -29,6 +29,10 @@
 
 </form>
 
+
+<?php if ($flash_msg = $this->session->flash_msg): ?>
+    <br><sub style="color: <?php echo $flash_msg['color'] ?>"><?php echo $flash_msg['message'] ?></sub>
+<?php endif; ?>
 
 
 
