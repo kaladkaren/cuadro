@@ -8,13 +8,18 @@ class Home_model extends Admin_core_model
     parent::__construct();
 
     $this->table = 'orderimages'; 
-    $this->upload_dir = 'uploads/orders/';
+    $this->upload_dir = 'orders/';
     $this->per_page = 15;
   }
 
   public function add($data)
   {
     return $this->db->insert($this->table, $data);
+  }
+
+  public function addImages($data)
+  {
+    
   }
 
   public function batch_upload($files = [])
