@@ -14,7 +14,10 @@ class Order_model extends Admin_core_model
 
   public function add($data)
   {
-    return $this->db->insert($this->table, $data);
+    $this->db->insert('orders', $data);
+    $last_id = $this->db->insert_id();
+
+    return $last_id;
   }
 
   public function update($id, $data)

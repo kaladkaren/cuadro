@@ -22,7 +22,8 @@ class Home extends Admin_core_controller {
   public function add()
   {
     $images = $this->Home_model->batch_upload($_FILES['order_images']);
-    if( $images ){
+    $order_details = $this->Order_model->add($this->input->post(null, true));
+    if( $order_details ){
       $this->session->set_flashdata('flash_msg', ['message' => 'New Order added successfully', 'color' => 'green']);
     } else {
       $this->session->set_flashdata('flash_msg', ['message' => 'Error Placing Order', 'color' => 'red']);
