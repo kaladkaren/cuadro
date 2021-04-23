@@ -26,7 +26,7 @@ class Orders extends Admin_core_controller {
   public function add()
   {
   
-    if($this->Order_model->add(array_merge($this->input->post(null, true),$this->Order_model->upload('order_images')))){
+    if($this->Order_model->add($this->input->post(null, true))){
      $this->session->set_flashdata('flash_msg', ['message' => 'Order Added Successfully', 'color' => 'green']);
    } else {
      $this->session->set_flashdata('flash_msg', ['message' => 'Error adding Order', 'color' => 'red']);
@@ -36,7 +36,7 @@ class Orders extends Admin_core_controller {
 
   public function update($id)
   {
-    if($this->Order_model->update($id, array_merge($this->input->post(null, true),$this->Order_model->upload('order_images')))){
+    if($this->Order_model->update($id, $this->input->post(null, true))){
      $this->session->set_flashdata('flash_msg', ['message' => 'Order updated Successfully', 'color' => 'green']);
    } else {
      $this->session->set_flashdata('flash_msg', ['message' => 'Error updating Order.', 'color' => 'red']);

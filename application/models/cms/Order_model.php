@@ -29,20 +29,20 @@ class Order_model extends Admin_core_model
     return $this->db->delete($this->table);
   }
 
-   public function all()
-  {
-    $res = $this->db->get($this->table)->result();
-    return $this->formatResImage($res);
-  }
+  //  public function all()
+  // {
+  //   $res = $this->db->get($this->table)->result();
+  //   return $this->formatResImage($res);
+  // }
 
-  public function formatResImage($res)
-  {
-    $data = [];
-    foreach ($res as $key => $value){
-      $value->order_images_f = base_url($this->upload_dir) . $value->order_images;
-      $data[] = $value;
-    }
-    return $data;
-  }
+  // public function formatResImage($res)
+  // {
+  //   $data = [];
+  //   foreach ($res as $key => $value){
+  //     $value->order_images_f = base_url($this->upload_dir) . $value->order_images;
+  //     $data[] = $value;
+  //   }
+  //   return $data;
+  // }
 
 }

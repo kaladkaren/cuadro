@@ -20,7 +20,6 @@
                   <tr>
                     <th>#</th>
                     <th>Order Type</th>
-                    <th>Order Images</th>
                     <th>Order Cost</th>
                     <th>Status</th>
                     <th>Order Date</th>
@@ -36,7 +35,6 @@
                       <tr>
                         <th scope="row"><?php echo $i++ ?></th>
                         <td><?php echo $value->order_type ?></td>
-                        <td><img src="<?php echo $value->order_images_f ?>" style="height: 100px; width: 100px;"></td>
                         <td><?php echo $value->order_cost ?></td>
                         <td><?php echo $value->status ?></td>
                         <td><?php echo $value->order_date ?></td>
@@ -44,7 +42,7 @@
                         <td><?php echo $value->delivery_status ?></td>
                         <td>
                           <button type="button"
-                          data-payload='<?php echo json_encode(['order_id' => $value->order_id, 'order_type' => $value->order_type, 'order_cost' => $value->order_cost, 'status' => $value->status, 'order_date' => $value->order_date, 'delivery_date' => $value->delivery_date, 'delivery_status' => $value->delivery_status])?>'
+                          data-payload='<?php echo json_encode(['order_id' => $value->order_id, 'order_type' => $value->order_type, 'order_cost' => $value->order_cost, 'customer_name' => $value->customer_name, 'customer_email' => $value->customer_email, 'customer_address' => $value->customer_address, 'status' => $value->status, 'order_date' => $value->order_date, 'delivery_date' => $value->delivery_date, 'delivery_status' => $value->delivery_status])?>'
                           class="edit-row btn btn-info btn-xs">Edit</button>
                           <button type="button" data-id='<?php echo $value->order_id; ?>'
                             class="btn btn-delete btn-danger btn-xs">Delete</button>
@@ -85,12 +83,20 @@
               <input type="text" class="form-control" name="order_type" placeholder="Order Type">
             </div>
             <div class="form-group">
-              <label >Order Images</label>
-              <input type="file" class="form-control" name="order_images" placeholder="Order Images">
-            </div>
-            <div class="form-group">
               <label >Order Cost</label>
               <input type="text" class="form-control" name="order_cost" placeholder="Order Cost">
+            </div>
+            <div class="form-group">
+              <label >Customer Name</label>
+              <input type="text" class="form-control" name="customer_name" placeholder="Customer Name">
+            </div>
+            <div class="form-group">
+              <label >Customer Email</label>
+              <input type="text" class="form-control" name="customer_email" placeholder="customer Email">
+            </div>
+            <div class="form-group">
+              <label >Customer Email</label>
+              <textarea class="form-control" name="customer_address" placeholder="customer Address"></textarea>
             </div>
             <div class="form-group">
               <label >Status</label>
@@ -118,8 +124,7 @@
       </div>
     </div>
   </div>
+  
   <!-- modal -->
-
-  <script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
   <script src="<?php echo base_url('public/admin/js/custom/') ?>order_management.js"></script>
   <script src="<?php echo base_url('public/admin/js/custom/') ?>generic.js"></script>

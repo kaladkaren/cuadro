@@ -1,8 +1,5 @@
 $(document).ready(function() {
  //Updating
-  
-  
-  client.picker().open();
  $('.edit-row').on('click', function(){
   $('.modal').modal()
    $('#main-form')[0].reset() // reset the form
@@ -10,16 +7,20 @@ $(document).ready(function() {
    console.log(payload);
 
    $('input[name=order_type]').removeAttr('required')
-   $('input[name=order_images]').removeAttr('required')
    $('input[name=order_cost]').removeAttr('required')
+   $('input[name=customer_name]').removeAttr('required')
+   $('input[name=customer_email]').removeAttr('required')
+   $('input[name=customer_address]').removeAttr('required')
    $('input[name=status]').removeAttr('required')
    $('input[name=order_date]').removeAttr('required')
    $('input[name=delivery_date]').removeAttr('required')
    $('input[name=delivery_status]').removeAttr('required')
 
    $('input[name=order_type]').val(payload.order_type)
-   $('input[name=order_images]').val(payload.order_images)
    $('input[name=order_cost]').val(payload.order_cost)
+   $('input[name=customer_name]').val(payload.customer_name)
+   $('input[name=customer_email]').val(payload.customer_email)
+   $('textarea[name=customer_address]').val(payload.customer_address)
    $('input[name=status]').val(payload.status)
    $('input[name=order_date]').val(payload.order_date)
    $('input[name=delivery_date]').val(payload.delivery_date)
@@ -37,11 +38,9 @@ $(document).ready(function() {
  $('.add-btn').on('click', function() {
   $('.modal').modal()
    $('#main-form')[0].reset() // reset the form
-
-
    $('#main-form').attr('action', base_url + 'cms/orders/add')
-   
  })
+
 
  //Deleting
  $('.btn-delete').on('click', function(){
