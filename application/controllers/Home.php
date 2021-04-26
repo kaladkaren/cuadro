@@ -33,7 +33,7 @@ class Home extends Admin_core_controller {
     } else {
       $this->session->set_flashdata('flash_msg', ['message' => 'Error Placing Order', 'color' => 'red']);
     }
-      $this->admin_redirect('');
+      $this->admin_redirect('home');
   }
 
 

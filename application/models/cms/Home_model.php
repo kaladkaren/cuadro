@@ -17,9 +17,16 @@ class Home_model extends Admin_core_model
     return $this->db->insert($this->table, $data);
   }
 
-  public function addImages($data)
+  public function addImages($data, $order_last_id)
   {
-    
+    if(!$data){
+      return false;
+    }
+    $res = [];
+    foreach ($data['name'] as $value){
+      $res[] = ['order_images' => $value, 'order_id' => $order_last_id];
+    }
+    return $this->db->insert_batch('orderimages', $res);
   }
 
   public function batch_upload($files = [])

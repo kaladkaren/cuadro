@@ -24,7 +24,8 @@
 	
 </select><br>
 <textarea name="customer_address" placeholder="Address"></textarea><br>
-<input type="file" name="order_images[]" multiple accept="image/*"><br>
+<img id="uploadPreview" style="width: 100px; height: 100px;" />
+<input type="file" name="order_images[]" multiple accept="image/*" id="uploadImage"><br>
 <input type="submit" value="Place Order">
 
 </form>
@@ -33,11 +34,6 @@
 <?php if ($flash_msg = $this->session->flash_msg): ?>
     <br><sub style="color: <?php echo $flash_msg['color'] ?>"><?php echo $flash_msg['message'] ?></sub>
 <?php endif; ?>
-
-
-
-
-
 
 <!-- <button id="facebookUpload">Upload your Photos for Facebook</button>
 <script type="text/javascript" src="https://api.filestackapi.com/filestack.js"></script>
