@@ -28,10 +28,10 @@ class Home extends Admin_core_controller {
     if ($images)
     {
       $image_upload_success = $this->Home_model->addImages($images, $order_last_id);
+      $this->Email_model->sendOrderDetails($order_last_id);
     }
 
     if(  $order_last_id || @$image_upload_success ){
-      $this->Email_model->sendOrderDetails($order_last_id);
       $this->session->set_flashdata('flash_msg', ['message' => 'New Order added successfully', 'color' => 'green']);
     } else {
       $this->session->set_flashdata('flash_msg', ['message' => 'Error Placing Order', 'color' => 'red']);
