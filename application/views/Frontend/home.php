@@ -3,7 +3,11 @@
 <head>
 	<title>Cuadro</title>
     <!-- <script type="text/javascript" src="https://static.filestackapi.com/v3/filestack.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.4.0/cropper.css">
 </head>
+<style type="text/css">
+	
+</style>
 <body>
 <form role="form" method="post" action="add" id="order-details" enctype="multipart/form-data">
 <input type="text" name="customer_name" placeholder="Enter your Name"><br>
@@ -24,37 +28,24 @@
 	
 </select><br>
 <textarea name="customer_address" placeholder="Address"></textarea><br>
-<img id="uploadPreview" style="width: 100px; height: 100px;" />
-<input type="file" name="order_images[]" multiple accept="image/*" id="uploadImage"><br>
+<input type="file" name="order_images[]" multiple accept="image/*" id="imageCropFileInput"><br>
 <input type="submit" value="Place Order">
 
 </form>
+<input type="hidden" id="profile_img_data">
+<div class="img-preview"></div>
+<div id="galleryImages"></div>
+<div id="cropper">
+  <canvas id="cropperImg" width="0" height="0"></canvas>
+  <button class="cropImageBtn" id="cropImageBtn">Crop</button>
+</div>
 
 
 <?php if ($flash_msg = $this->session->flash_msg): ?>
     <br><sub style="color: <?php echo $flash_msg['color'] ?>"><?php echo $flash_msg['message'] ?></sub>
 <?php endif; ?>
 
-<!-- <button id="facebookUpload">Upload your Photos for Facebook</button>
-<script type="text/javascript" src="https://api.filestackapi.com/filestack.js"></script>
-	
-<script>
-	filepicker.setKey("AfLddltxlRFyI7PzHfgR4z");
-	
-	document.getElementById('facebookUpload').onclick = function(){
-
-		filepicker.pick(
-		{
-			mimetype: 'image/*',
-			services: ['COMPUTER','FACEBOOK','INSTAGRAM'],
-			maxFiles: 100
-		},
-		function(Blob){
-			console.log(JSON.stringify(Blob));
-		}
-		);
-	};	
-</script> -->
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.4.0/cropper.js"></script>
+<script src="<?php echo base_url('public/admin/js/custom/') ?>cropper.js"></script>
 </body>
 </html>

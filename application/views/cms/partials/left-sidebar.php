@@ -52,7 +52,7 @@
         <li>
           <a href="<?php echo base_url('cms/frames') ?>"
             class="<?php echo $this->uri->segment(1) === 'cms' && ($this->uri->segment(2) === 'frames') ? 'active': ''; ?>">
-            <i class="fa fa-cogs"></i>
+            <i class="fa fa-book"></i>
             <span>Frames</span>
           </a>
         </li>
@@ -61,6 +61,20 @@
             class="<?php echo $this->uri->segment(1) === 'cms' && ($this->uri->segment(2) === 'orders') ? 'active': ''; ?>">
             <i class="fa fa-book"></i>
             <span>Orders</span>
+          </a>
+        </li>
+        <li>
+          <a href="<?php echo base_url('cms/faq') ?>"
+            class="<?php echo $this->uri->segment(1) === 'cms' && ($this->uri->segment(2) === 'faq') ? 'active': ''; ?>">
+            <i class="fa fa-book"></i>
+            <span>FAQ</span>
+          </a>
+        </li>
+        <li>
+          <a href="<?php echo base_url('cms/products') ?>"
+            class="<?php echo $this->uri->segment(1) === 'cms' && ($this->uri->segment(2) === 'products') ? 'active': ''; ?>">
+            <i class="fa fa-shopping-cart"></i>
+            <span>Products</span>
           </a>
         </li>
       </ul>

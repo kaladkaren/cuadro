@@ -32,6 +32,12 @@ class Order_model extends Admin_core_model
     return $this->db->delete($this->table);
   }
 
+  public function getCustomerForEmail($id)
+  {
+    $this->db->where('order_id', $id);
+    return $this->db->get($this->table)->row();
+  }
+
   //  public function all()
   // {
   //   $res = $this->db->get($this->table)->result();
