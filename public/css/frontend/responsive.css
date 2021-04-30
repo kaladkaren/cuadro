@@ -1,0 +1,260 @@
+/*Desktop Resolutions*/
+@media screen and (max-width: 1600px) {
+
+}
+
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-width: 1366px) {
+
+}
+
+@media screen and (max-width: 1280px) {
+	header .pagewrapper nav ul li a{font-size: 16px; line-height: 22px;}
+	header .pagewrapper nav ul li:last-child a{font-size: 22px; line-height: 26px; height: 48px;}
+	.featured h1{font-size: 52px; line-height: 58px;}
+	.why-us ul li h4{font-size: 22px; line-height: 26px;}
+	.why-us ul li p{font-size: 16px; line-height: 22px;}
+	.video article h2{font-size: 32px; line-height: 38px;}
+	.video article p{font-size: 22px; line-height: 34px;}
+	.video article h6 a{font-size: 22px; line-height: 26px;}
+	footer ul.footer li.contact-info ul.cinfo li.contactdet ul.office li p, footer ul.footer li.contact-info ul.cinfo li.contactdet ul.office li:last-child p{font-size: 14px; line-height: 22px;}
+	footer ul.footer li.footermenu ul.menulist li a{font-size: 14px; line-height: 22px;}
+	footer ul.footer li.social-links h4,footer ul.footer li.footermenu h4,footer ul.footer li.contact-info ul.cinfo li.contactdet h4{font-size: 16px; line-height: 22px;}
+	footer ul.footer li.contact-info ul.cinfo li.contactdet ul.office li h5, footer ul.footer li.contact-info ul.cinfo li.contactdet ul.office li:last-child h5{font-size: 15px; line-height: 21px;}
+
+	.contact-info-main .wrap article h2{font-size: 36px; line-height: 52px;}
+	.contact-info-main .wrap article .contact-det h4{font-size: 20px; line-height: 30px;}
+	.contact-info-main .wrap article .contact-det ul.office li h5, .contact-info-main .wrap article .contact-det ul.office li:last-child h5,
+	.contact-info-main .wrap article .contact-det ul.office li p, .contact-info-main .wrap article .contact-det ul.office li:last-child p{font-size: 16px; line-height: 24px;}
+	.contact-form .pagewrapper3{padding: 0;}
+	.contact-form .pagewrapper3 .wrap h4{font-size: 22px; line-height: 30px;}
+	.contact-form .pagewrapper3 .wrap ul li label,
+	.contact-form .pagewrapper3 .wrap .iagree-sec label{font-size: 16px; line-height: 24px;}
+	.contact-form .pagewrapper3 .wrap .submit-btn{font-size: 18px; line-height: 24px;}
+
+	.short-banner .wrap article h2{font-size: 36px; line-height: 52px;}
+	.short-banner .wrap article p{font-size: 16px; line-height: 24px;}
+
+	.banner .wrap h1{font-size: 36px; line-height: 48px;}
+	.content .wrap p{font-size: 15px; line-height: 24px;}
+	
+	.content .wrap h1 {font-size: 36px; line-height: 48px;}
+	.content .wrap h2 {font-size: 32px; line-height: 42px;}
+	.content .wrap h3 {font-size: 26px; line-height: 36px;}
+	.content .wrap h4 {font-size: 24px; line-height: 34px;}
+	.content .wrap h5 {font-size: 20px; line-height: 30px;}
+	.content .wrap h6 {font-size: 18px; line-height: 24px;}
+
+	.get-started .wrap .step-1 ul.pick-options{padding-top: 32px;}
+	.get-started .wrap h1{font-size: 36px; line-height: 48px;}
+	.get-started .wrap .steps h5{font-size: 20px; line-height: 32px;}
+	.get-started .wrap .step-1 ul.pick-options li:first-child label, .get-started .wrap .step-1 ul.pick-options li:last-child label{font-size: 36px; line-height: 48px;}
+	.get-started .wrap .navigation{margin-top: 56px!important;}
+	.get-started .wrap .step-2 ul.upload-options > li label{font-size: 16px; line-height: 22px;}
+	.get-started .wrap .step-2 ul.upload-options{padding-bottom: 125px;}
+
+	.get-started .wrap .step-4 .forms ul.form-list li label{font-size: 16px; line-height: 26px;}
+
+	.get-started .wrap .step-5 .checkouts .container .left h5{font-size: 20px; line-height: 32px;}
+	.get-started .wrap .step-5 .checkouts .container .left p,
+	.get-started .wrap .step-5 .checkouts .container .right .top .costs li label,
+	.get-started .wrap .step-5 .checkouts .container .right .top .costs li .value,
+	.get-started .wrap .step-5 .checkouts .container .right .total label,
+	.get-started .wrap .step-5 .checkouts .container .right .total .value-total,
+	.get-started .wrap .step-5 .checkouts .container .right .top .costs li .quantity{font-size: 18px; line-height: 32px;}
+}
+
+/*Landscape tablets*/
+@media screen and (max-width: 1100px) {
+	.pagewrapper8 {width: 85%;}
+	
+	footer ul.footer li.social-links ul.socials li{width: 32px; height: 32px;}
+	.contact-form .pagewrapper3 .wrap{padding: 32px;}
+
+	.products .product-list li h5{font-size: 20px; line-height: 30px;}
+	.products .pagination li.active a{font-size: 18px; line-height: 18px;}
+
+	.get-started .wrap .navigation{margin-top: 36px!important;}
+	.get-started .wrap .step-3 .frame-options-container{padding: 16px 0;}
+
+	.get-started .wrap .step-5 .checkouts .container .right .top{padding: 16px;}
+	.get-started .wrap .step-5 .checkouts .container .right .total{padding: 12px 16px;}
+}
+
+/*Portrait Tablets*/
+@media screen and (max-width: 999px) {
+	/* header .pagewrapper nav ul li a{padding: 0 12px;} */
+	.pagewrapper, .pagewrapper2 {width: 96%;}
+	header .mainnav{display: none;}
+	header .lets-do-it {display: flex;}
+	header #mobnav{display: flex;}
+	header{height: auto; padding-bottom: 10px; padding-top: 0;}
+	header .pagewrapper{height: 108px;}
+	header .pagewrapper aside{right: 0; left: auto;}
+	
+	.featured{height: auto; padding: 118px 5px 32px;}
+	.featured h1{font-size: 48px; line-height: 54px; position: relative; top: auto; padding: 20px 12px;}
+	.featured{width: 100%; height: auto;}
+
+	.why-us ul li:first-child{width: 100%; margin-bottom: 24px;}
+	.why-us ul li{width: 50%;}
+
+	.projects ul.project-list li{width: 49%;}
+
+	.video article{width: 100%; margin-bottom: 32px; text-align: center;}
+	.video article p{max-width: initial;}
+	.video aside{width: 100%; float: left;}
+
+	footer ul.footer{padding-bottom: 0;}
+	footer .main-footer {border-bottom: none; margin-bottom: 10px;}
+	footer ul.footer li.contact-info{width: 100%; margin-bottom: 0;}
+	footer ul.footer li.contact-info ul.cinfo li.footerlogo{left: 50%; transform: translateX(-50%);}
+	footer ul.footer li.contact-info ul.cinfo li.contactdet,
+	footer ul.footer li.footermenu, footer ul.footer li.social-links{display: none;}
+	
+	footer .mobile-footer{display: block;}
+	footer .lets-do-it {display: block!important;}
+	footer p.copyright{display: none;}
+	/* footer ul.footer li.footermenu{width: 70%;}
+	footer ul.footer li.social-links{width: 30%;} */
+
+	.contact-info-main{padding-top: 118px;}
+	.short-banner{padding-top: 118px;}
+	.contact-info-main .wrap{padding-top: 0;}
+	.contact-info-main .wrap .gmaps {width: 100%; height: 306px; padding-top: 72px;}
+	.contact-info-main .wrap article{width: 100%;}
+	.contact-info-main .wrap article h2{position: absolute; top: -300px; left: 0; width: 100%; text-align: center; background: white; padding: 10px 0;}
+	.contact-info-main .wrap article{padding: 24px 0;}
+
+	.short-banner .wrap article {width: 100%; order: 1; padding: 32px 0; text-align: center;}
+	.short-banner .wrap aside{width: 100%; order: 2;}
+
+	.products .product-list{margin: 0 -12px;}
+	.products .product-list li{width: 50%; padding: 0 12px;}
+
+	.get-started{padding-top: 118px;}
+	.get-started .wrap .step-1 ul.pick-options li.divider{font-size: 20px; line-height: 28px; padding: 0 24px;}
+	.get-started .wrap .step-1 ul.pick-options li:first-child, .get-started .wrap .step-1 ul.pick-options li:last-child{width: 250px; height: 250px;}
+
+	.get-started .wrap .step-5 .checkouts .container .left{width: 100%; padding-right: 0; order: 2;}
+	.get-started .wrap .step-5 .checkouts .container .right {width: 100%; order: 1; margin-bottom: 24px;}
+	.get-started .wrap .navigation{order: 3;}
+}
+
+/*Modern Phones*/
+@media screen and (max-width: 600px) {
+	.pagewrapper, .pagewrapper2, .pagewrapper7{width: 95%;}
+	header .pagewrapper{height: 98px;}
+	header .pagewrapper aside{width: 98px; height: 98px; right: 0; left: auto;}
+	header .mob-dropdown ul li a{font-size: 18px; line-height: 26px;}
+
+	header .mob-dropdown .faqs ul.faq-list li .faq-top p{font-size: 16px; line-height: 24px;}
+	ul.accordion li .accord-top p{font-size: 16px; line-height: 24px;}
+
+	.featured h1{font-size: 42px; line-height: 52px;}
+	.featured h1 span{display: block;}
+
+	.projects ul.project-list {justify-content: center;}
+	.projects ul.project-list li{width: 80%;}
+	.projects ul.project-list li div.proj {height: 212px;}
+
+	.why-us ul li {width: 100%; margin-bottom: 32px;}
+	.why-us ul li:last-child {margin-bottom: 0;}
+	.why-us ul li h4{font-size: 20px; line-height: 24px;}
+	.why-us ul li p{font-size: 14px; line-height: 20px;}
+
+	.video article h2{font-size: 26px; line-height: 34px}
+	.video article p{font-size: 15px; line-height: 24px;}
+	.video article h6 a{font-size: 16px; line-height: 24px;}
+
+	footer .mobile-footer .mobile-footer-links li{font-size: 14px; line-height: 16px; padding: 0 6px;}
+	footer .mobile-footer .mob-copyright{font-size: 14px; line-height: 22px;}
+
+	.contact-info-main .wrap article h2{padding-top: 0;}
+	.contact-info-main .wrap article .contact-det {text-align: center;}
+	.contact-info-main .wrap article .contact-det ul.office li{width: 100%; margin-bottom: 12px;}
+	.contact-info-main .wrap article .contact-det ul.office li:last-child{margin-bottom: 0; width: 100%;}
+	.contact-info-main .wrap article .contact-det h4{font-size: 18px; line-height: 28px; margin-bottom: 8px;}
+	.contact-info-main .wrap article .contact-det ul.office li h5, .contact-info-main .wrap article .contact-det ul.office li:last-child h5, .contact-info-main .wrap article .contact-det ul.office li p, .contact-info-main .wrap article .contact-det ul.office li:last-child p{font-size: 15px; line-height: 24px;}
+	.contact-info-main .wrap{padding-bottom: 0; border-bottom: 0; margin-bottom: 0;}
+	.contact-form .pagewrapper3{width: 100%;}
+	.contact-form .pagewrapper3 .wrap ul li{width: 100%!important;}
+	.contact-form .pagewrapper3 .wrap ul li label, .contact-form .pagewrapper3 .wrap .iagree-sec label,
+	.contact-form .pagewrapper3 .wrap ul li input, .contact-form .pagewrapper3 .wrap ul li textarea{font-size: 15px; line-height: 24px;}
+	.contact-form .pagewrapper3 .wrap .iagree-sec{width: 100%; margin-bottom: 18px;}
+	.contact-info-main{padding-top: 108px;}
+	
+	.short-banner{padding-top: 108px;}
+	.short-banner .wrap{border-bottom: none; padding-top: 0;}
+	.products .product-list{margin: 0 0 24px}
+	.products .product-list li{width: 80%; padding: 0; margin: 0 auto 24px;}
+	.short-banner .wrap article p{font-size: 15px; line-height: 24px;}
+	.products .product-list li h5{font-size: 16px; line-height: 24px;}
+	.products .pagination li a{font-size: 16px; line-height: 16px;}
+
+	.get-started{padding-top: 108px;}
+	.get-started .wrap{padding: 16px 0 56px;}
+	.get-started .wrap .navigation{margin-top: 24px;}
+	.get-started .wrap .navigation .next-btn{font-size: 16px; line-height: 16px; padding: 14px 48px 14px 24px;}
+	.get-started .wrap .navigation .back-btn{font-size: 16px; line-height: 16px; padding: 14px 24px 14px 48px;}
+	.get-started .wrap .navigation .checkout-btn{font-size: 16px; line-height: 16px; padding: 14px 18px 14px 18px;}
+	.get-started .wrap .navigation .place-order-btn{font-size: 16px; line-height: 16px; padding: 14px 18px 14px 18px;}
+	.get-started .wrap .navigation .checkout-btn, .get-started .wrap .navigation .place-order-btn{min-width: initial;}
+
+	.get-started .wrap .step-1 ul.pick-options{flex-direction: column;}
+	.get-started .wrap .step-1 ul.pick-options li.divider{padding: 0; margin: 24px 0; font-size: 15px; line-height: 24px; width: 100%; position: relative;}
+	.get-started .wrap .step-1 ul.pick-options li.divider:before{content: ''; width: calc(50% - 24px); height: 1px; background: #e1e7ec; position: absolute; left: 0; top: calc(50% - 1px);}
+	.get-started .wrap .step-1 ul.pick-options li.divider:after{content: ''; width: calc(50% - 24px); height: 1px; background: #e1e7ec; position: absolute; right: 0; top: calc(50% - 1px);}
+	.get-started .wrap .step-1 ul.pick-options li:first-child, .get-started .wrap .step-1 ul.pick-options li:last-child{width: 154px; height: 154px; }
+	.get-started .wrap .step-1 ul.pick-options li:first-child::before, .get-started .wrap .step-1 ul.pick-options li:last-child::before{width: calc(100% - 20px); height: calc(100% - 20px);}
+	.get-started .wrap .step-1 ul.pick-options li:first-child label, .get-started .wrap .step-1 ul.pick-options li:last-child label{font-size: 22px; line-height: 28px;}
+
+	.get-started .wrap .step-2 ul.upload-options{padding: 24px 0;}
+	.get-started .wrap .step-2 ul.upload-options > li{width: 100%; max-width: 242px; margin: 0 auto 16px;}
+	.get-started .wrap .step-2 ul.upload-options > li:hover{background: transparent!important;}
+	.get-started .wrap .step-2 ul.upload-options > li label{padding: 20px 16px; height: auto;}
+	.get-started .wrap .step-2 ul.upload-options > li label img.logo{margin-bottom: 12px;}
+	.get-started .wrap .step-2 ul.upload-options > li ul.files{position: relative; transform: none; top: auto; left: auto;}
+	.get-started .wrap .step-2 ul.upload-options > li ul.files li {margin: 5px 0;}
+
+	.get-started .wrap .step-3 .frame-options-container ul.frame-options{width: 100%;}
+	.get-started .wrap .step-3 .frame-options-container ul.frame-options li{width: 20%;}
+	.get-started .wrap .step-3 .frame-options-container ul.frame-options li label img{width: 100%; height: auto;}
+	.cropper-popup .container .lbox #back-crop,.cropper-popup .container .lbox #done-crop{min-width: 120px; font-size: 14px; line-height: 14px;}
+	.cropper-popup .container .lbox{padding: 20px 5px 20px;}
+
+	.get-started .wrap .step-4 .forms ul.form-list li{width: 100%; margin-bottom: 12px;}
+	.get-started .wrap .step-4 .forms{padding-bottom: 0;}
+
+	.get-started .wrap .step-5 .checkouts .container .right .top .costs li{margin-bottom: 5px;}
+	.get-started .wrap .step-5 .checkouts .container .left p, .get-started .wrap .step-5 .checkouts .container .right .top .costs li label, 
+	.get-started .wrap .step-5 .checkouts .container .right .top .costs li .value, .get-started .wrap .step-5 .checkouts .container .right .total label, 
+	.get-started .wrap .step-5 .checkouts .container .right .total .value-total, .get-started .wrap .step-5 .checkouts .container .right .top .costs li .quantity {font-size: 14px; line-height: 20px;}
+
+	.get-started .wrap .step-5 .checkouts .container .left h5{font-size: 16px; line-height: 22px;}
+	.get-started .wrap .step-5 .checkouts .container .left p{font-size: 14px; line-height: 20px;}
+	.get-started .wrap .step-5 .checkouts .container .right .top .photos-list-final{margin: 0 -6px 12px;}
+	.get-started .wrap .step-5 .checkouts .container .right .top .photos-list-final li{padding: 0 6px;}
+}
+
+/*SE Phones*/
+@media screen and (max-width: 325px) {
+	header .pagewrapper{height: 86px;}
+	header .pagewrapper aside{width: 86px; height: 86px;}
+	header .mob-dropdown ul li a{font-size: 16px; line-height: 24px;}
+	header .mob-dropdown .top {height: 96px;}
+	header .mob-dropdown .top aside{height: 86px; width: 86px;}
+	header .mob-dropdown nav ul li a{padding: 10px; font-size: 16px; line-height: 24px;}
+
+	header .mob-dropdown .lets-do-it a{height: 42px; font-size: 18px; line-height: 22px;}
+	header .mob-dropdown .bottom ul.privacy-terms{margin-bottom: 16px;}
+	header .mob-dropdown .bottom ul.privacy-terms li a{font-size: 16px; line-height: 20px;}
+
+	.video article h2{font-size: 24px; line-height: 32px;}
+	.video article p{font-size: 14px; line-height: 30px;}
+	.video article h6 a{font-size: 18px; line-height: 24px;}
+
+}
