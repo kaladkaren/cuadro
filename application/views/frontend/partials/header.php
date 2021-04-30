@@ -5,11 +5,11 @@
             <title>Cuadro | Homepage</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!-- Place CSS links here -->
-            <link rel="stylesheet" href="<?php echo base_url('public/admin/'); ?>css/frontend/slick.css"/>
-            <link rel="stylesheet" href="<?php echo base_url('public/admin/'); ?>css/frontend/slick-theme.css"/>
+            <link rel="stylesheet" href="<?php echo base_url('public/'); ?>css/frontend/slick.css"/>
+            <link rel="stylesheet" href="<?php echo base_url('public/'); ?>css/frontend/slick-theme.css"/>
             <!-- Place CSS links here -->
-            <link rel="stylesheet" href="<?php echo base_url('public/admin/'); ?>css/frontend/main.css">
-            <link rel="stylesheet" href="<?php echo base_url('public/admin/'); ?>css/frontend/responsive.css">
+            <link rel="stylesheet" href="<?php echo base_url('public/'); ?>css/frontend/main.css">
+            <link rel="stylesheet" href="<?php echo base_url('public/'); ?>css/frontend/responsive.css">
     </head>
     <body>
       <header class="header">

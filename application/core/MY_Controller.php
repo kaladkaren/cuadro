@@ -35,6 +35,14 @@ class Admin_core_controller extends CI_Controller
       redirect($param);
     }
   }
+
+  public function wrapper_frontend($body, $data = null)
+  {
+    $this->load->view('frontend/partials/header');
+    $this->load->view($body, $data);
+    $this->load->view('frontend/partials/footer');
+  }
+
 }
 
 class Front_core_controller extends CI_Controller

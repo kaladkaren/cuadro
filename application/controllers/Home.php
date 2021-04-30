@@ -17,9 +17,11 @@ class Home extends Admin_core_controller {
   {
     $res = $this->Frame_model->all();
     $data['res'] = $res;
-    $this->load->view('frontend/partials/header');
-    $this->load->view('frontend/home', $data);
-    $this->load->view('frontend/partials/footer');
+    // $this->load->view('frontend/partials/header');
+    // $this->load->view('frontend/home', $data);
+    // $this->load->view('frontend/partials/footer');
+
+    $this->wrapper_frontend('frontend/home', $data);
 
   }
 
